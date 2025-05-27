@@ -1,0 +1,71 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Contenedor principal en columna */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Imagen responsiva */
+.image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.campus-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mensaje “en construcción” debajo de la imagen */
+.construction-message {
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 8px;
+}
+
+.construction-message h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.construction-message p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 600px) {
+  .construction-message {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .construction-message h1 {
+    font-size: 1.5rem;
+  }
+  .construction-message p {
+    font-size: 0.9rem;
+  }
+}
